@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  padding: 10px 0;
+  height: 100px; }
+  header > div {
+    width: 1190px;
+    padding: 0 10px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    header > div #left img {
+      width: 295px;
+      height: 100px;
+      border-right: 1px solid #ccc;
+      padding-right: 10px;
+      float: left; }
+    header > div #left span {
+      display: block;
+      float: left;
+      margin-left: 10px;
+      height: 100px;
+      line-height: 100px;
+      font-size: 30px;
+      color: #3C3C3C; }
+    header > div #right {
+      height: 100px;
+      width: 180px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      header > div #right a:nth-child(1) {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        display: block;
+        float: left;
+        background: url("../img/login/login.png");
+        background-position: 80px 0; }
+      header > div #right a:nth-child(2) {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        display: block;
+        float: left;
+        background: url("../img/login/login.png");
+        background-position: -60px 0; }
+      header > div #right a:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        display: block;
+        float: left;
+        background: url("../img/login/login.png");
+        background-position: 0px 0; }
+
+#contentbox {
+  width: 100%;
+  height: 400px; }
+  #contentbox #content {
+    width: 1210px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden; 
+  position: relative}
+    #contentbox #content #left {
+      width: 400px;
+      height: 290px;
+      margin: 30px 0;
+      float: left;
+    position: absolute;
+  left: -400px;
+top: 30px; }
+      #contentbox #content #left img {
+        width: 100%;
+        height: 100%; }
+    #contentbox #content #right {
+      width: 400px;
+      height: 400px;
+      margin-right: 10px;
+      float: right; }
+      #contentbox #content #right p {
+        width: 402px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #contentbox #content #right p > a {
+          display: block;
+          width: 125px;
+          height: 38px;
+          color: #000000;
+          line-height: 40px;
+          text-align: center;
+          text-decoration: none;
+          border-bottom: 1px solid #C3C3C3; }
+        #contentbox #content #right p b:nth-child(3) {
+          width: 152px;
+          height: 38px;
+          display: block;
+          color: #000000;
+          line-height: 40px;
+          text-align: center;
+          text-decoration: none;
+          border-bottom: 1px solid #C3C3C3; }
+          #contentbox #content #right p b:nth-child(3) a {
+            color: red;
+            text-decoration: none; }
+        #contentbox #content #right p .a {
+          border: 1px solid #C3C3C3;
+          color: red;
+          border-bottom: 1px solid #fff; }
+      #contentbox #content #right .form1 {
+        width: 340px;
+        height: 274px;
+        padding: 30px;
+        display: none;
+        border: 1px solid #C3C3C3;
+        border-top: none;
+        line-height: 30px; }
+        #contentbox #content #right .form1 > div {
+          width: 330px;
+          height: 30px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          color: #3C3C3C;
+          display: flex;
+          align-items: center;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          position: relative; }
+          #contentbox #content #right .form1 > div input {
+            border: none;
+            overflow: hidden;
+            width: 292px;
+            height: 28px;
+            margin-left: 10px;
+            outline: none;}
+          #contentbox #content #right .form1 > div p {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            font-size: 10px;
+            line-height: 12px;
+            height: 12px;
+            color: red; }
+            #contentbox #content #right .form1 > div .xieyi{
+              position: absolute;
+              left:30px;
+              top: 10px;
+            }
+        #contentbox #content #right .form1 > div:nth-child(4) {
+          width: 330px;
+          height: 30px;
+          color: #3C3C3C;
+          border: none;
+          display: flex;
+          padding-left: 0;
+          justify-content: flex-start; }
+          #contentbox #content #right .form1 > div:nth-child(4) > div {
+            width: 100px;
+            height: 30px;
+            border: 1px solid #C3C3C3;
+            box-sizing: border-box;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; }
+            #contentbox #content #right .form1 > div:nth-child(4) > div input {
+              border: none;
+              width: 62px;
+              height: 28px;
+              font-size: 12px; }
+          #contentbox #content #right .form1 > div:nth-child(4) > a {
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            margin-left: 10px;
+            border: 1px solid #C3C3C3;
+            box-sizing: border-box;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #F44444;
+            color: #fff; }
+        #contentbox #content #right .form1 > div:nth-child(5) {
+          border: none;
+          font-size: 12px;
+          padding-left: 0; }
+          #contentbox #content #right .form1 > div:nth-child(5) input {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px; }
+          #contentbox #content #right .form1 > div:nth-child(5) p span {
+            font-size: 12px; }
+          #contentbox #content #right .form1 > div:nth-child(5) p a {
+            font-size: 12px;
+            text-decoration: none; }
+        #contentbox #content #right .form1 > a {
+          width: 330px;
+          height: 30px;
+          background: #F44444;
+          color: #fff;
+          display: block;
+          text-decoration: none;
+          text-align: center; }
+      #contentbox #content #right .form3 {
+        display: block; }
+
+#footer {
+  width: 100%;
+  margin-top: 140px; }
+  #footer #footerbottom {
+    width: 1210px;
+    margin: 0 auto;
+    padding: 20px 0; }
+    #footer #footerbottom p {
+      text-align: center;
+      line-height: 26px;
+      font-size: 12px;
+      color: #3C3C3C; }
+      #footer #footerbottom p a {
+        color: #3C3C3C; }
+      #footer #footerbottom p a:hover {
+        color: red;
+        text-decoration: underline; }
+
+/*# sourceMappingURL=zhuce.css.map */

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" href="css/gwc.css" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/jQuery.js" ></script>
+		<script type="text/javascript" src="js/gwc.js" ></script>
+		<script type="text/javascript" src="js/gwccookie.js" ></script>
+	</head>
+	<body>
+		<header>
+			<div class="hbox">
+				<div class="h0">
+					<span><img src="img/curcity.png"></span>
+					<span><a>邯郸</a></span>
+					<a href="">【切换市区】</a>
+				</div>
+				<div class="h1">
+					<a href="">欢迎光临本店</a>
+					<div class="index_user">
+						<a href="login.html">请登录</a>
+						<a href="zhuce.html">免费注册</a>
+					</div>
+				</div>
+				<div class="hr">
+					<a href=""><span>我的信息</span><span class="iconfont icon-xiangxiajiantou"></span><p id="hr1"><span>已买到的宝贝</span><span>我的地址管理</span></p></a>
+					<a href=""><span class="iconfont icon-aixin" ></span><span>我关注的店铺</span></a>
+					<a href=""><span class="iconfont icon-gouwuche1"></span><span>购物车</span><span class="iconfont icon-xialahuise"></span></a>
+					<a href="">收藏夹<span class="iconfont icon-xiangxiajiantou"></span></a>
+					<a href=""><span class="iconfont icon-shouji1"></span>手机版</a>
+					<a href="">商家支持<span class="iconfont icon-xiangxiajiantou"></span></a>
+					<a href=""><span class="iconfont icon-wangzhandaohang"></span>网站导航<span class="iconfont icon-xialahuise"></span></a>
+				</div>
+				
+				
+				
+				
+				<div id="menu-1">
+					<p><span>当前城市：</span><b>邯郸</b></p>
+					<a href="javascript:;">太行山</a>
+					<a href="javascript:;">保定</a>
+					<a href="javascript:;">井冈山</a>
+					<a href="javascript:;">贵州</a>
+					<a href="javascript:;">西藏</a>
+					<a href="javascript:;">大理</a>
+					<a href="javascript:;">云南</a>
+				</div>
+				
+				<div id="menu-4">
+					<a href="javascript:;">收藏的宝贝</a>
+					<a href="javascript:;">收藏的店铺</a>
+				</div>
+				
+				
+				<div id="menu-5">
+					<img src="img/bg2_files/weixin.jpg">
+				</div>
+				
+				
+				<div class="menu-bd" id="menu-6">
+			          <ul>
+			            <li>
+			              <h3>商家：</h3>
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=9">售后流程</a> 
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=10">购物流程</a> 
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=11">订购方式</a> 
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=18">常见问题</a> 
+			               
+			              <a href="http://www.juhuimai.cn/article_list.php">文章资讯</a> 
+			               
+			              <a href="http://www.juhuimai.cn/zt/2015/jhk" target="_blank">聚惠卡</a> 
+			               
+			              <a href="http://www.juhuimai.cn/zt/2015/renzheng" target="_blank">认证商家</a> 
+			               
+			              <a href="http://xue.juhuimai.cn/index.php" target="_blank">商学院</a> 
+			               
+			              <a href="http://www.juhuimai.cn/zt/2015/zhaoshang" target="_blank">全面招商</a> 
+			               
+			            </li>
+			            <li>
+			              <h3>帮助：</h3>
+			              <a href="http://www.juhuimai.cn/help.php" target="_top" title="帮助中心">帮助中心</a> 
+			            </li>
+			          </ul>
+			    </div>
+				
+				
+				<div class="menu-bd sn-sitemap-bd" id="menu-8">
+				            <div class="site-cont site-hot">
+				              <h2>产品分类<span>Product</span></h2>
+				              <ul class="site-list">
+				                <li><a href="http://www.juhuimai.cn/category.php?id=1">食品生鲜</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=2">服装服饰</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=3">个护化妆</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=4">手机数码</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=5">家用电器</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=6">家纺家居</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=7">酒类饮料</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=8">母婴用品</a></li>
+				              </ul>
+				            </div>
+				            <div class="site-cont site-market">
+				              <h2>店铺街<span>Market</span></h2>
+				              <ul class="site-list">
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=1">精选</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=2">女人</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=3">男人</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=4">家装</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=5">母婴</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=6">美妆</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=7">美食</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=8">数码</a></li>
+				              </ul>
+				            </div>
+				            <div class="site-cont site-brand">
+				              <h2>关于我们<span>About</span></h2>
+				              <ul class="site-list">
+				                <li><a href="http://www.juhuimai.cn/help.php?id=24">公司简介</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=25">管理团队</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=26">媒体报道</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=47">领导关怀</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=76">招贤纳士</a></li>
+				              </ul>
+				            </div>
+				         </div>
+			</div>	
+		</header>
+	
+		<div id="contentbox">
+			<div id="content">
+				<div id="contenttop">
+					<div id="topleft">
+						<img src="img/gouwuche_files/logo.jpg">
+					</div>
+					<div id="topright">
+						<ul>
+							<li>
+								<div>查看购物车</div>
+								<div></div>
+							</li>
+							<li>
+								<div>拍下商品</div>
+								<div>2</div>
+							</li>
+							<li>
+								<div>付款</div>
+								<div>3</div>
+							</li>
+							<li>
+								<div>确认收货</div>
+								<div>4</div>
+							</li>
+							<li>
+								<div>评价</div>
+								<div>5</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+				
+				<!--这是已添加进购物车的商品-->
+				<div id="contentcenter">
+					<div>
+						<table cellpadding="0" cellspacing="0" width="100%" border="0">
+					        <tbody><tr> 
+					          <td width="8%" align="center"><input type="checkbox" autocomplete="off" id="chkAll" name="chkAll" checked="true" onclick="return chkAll_onclick()" style="height:28px;vertical-align:middle;">
+					            全选</td>
+					          
+					          <td width="37%" align="center">产品</td>
+					          <td width="15%" align="center">数量</td>
+					          <td width="15%" align="center">本店价</td>
+					          <td width="15%" align="center">小计</td>
+					          <td width="10%" align="center">操作</td>
+					        </tr>
+					      </tbody>
+						</table>
+					</div>
+					
+					<table class="tbsp" cellpadding="5" cellspacing="1" border="0" width="100%">
+						<tbody id="list">
+							
+						</tbody>
+					</table>
+					
+					<table width="100%" align="center" border="0" cellpadding="5" cellspacing="6" style="border-top:1px solid #ddd;">
+					      <tbody><tr>
+					        <td width="150"><a href="./" class="continue_buy">继续购物</a></td>
+					        <td align="right" width="80"><a href="flow.php?step=clear" class="jmclear"><font color="#aaaaaa">清空购物车 </font></a></td>
+					        <td align="right" id="cart_money_info"> 应付总额： <span class="zj_price">0.00</span>，比市场价 0.00 节省了 0.00 (0)</td>
+					        <td align="right" width="150"><a href="javascript:void(0);" onclick="return selcart_submit();" class="jmcheckout" style="color:#ffffff">去结算</a></td>
+					      </tr>
+					    </tbody>
+					</table>
+				</div>
+				
+				
+				
+				<div class="flowBox_jm">
+				    <div class="title_jm">
+				      <ul id="HotBoxTit">
+				        <li class="curr">购买的还买了</li>
+				        <li class="">今日最受欢迎</li>
+				         
+				      </ul>
+				    </div>
+				    <div class="flowHot" id="HotBox">
+				      <ul class="curr">
+				                        <li>
+				          <p class="pic"><a href="goods.php?id=2806" target="_blank"><img src="img/gouwuche_files/2805_thumb_G_1460757602080.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2806" target="_blank">海俪恩太阳镜女款唐嫣同款 时尚镀膜偏光太...</a></p>
+				          <p class="price"><del style="color:#999">393.5</del></p>
+				          <p><font class="price">328.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2805" target="_blank"><img src="img/gouwuche_files/2805_thumb_G_1460757602080.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2805" target="_blank">海俪恩太阳镜女 唐嫣同款 2016新款 ...</a></p>
+				          <p class="price"><del style="color:#999">393.5</del></p>
+				          <p><font class="price">328.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2804" target="_blank"><img src="img/gouwuche_files/2804_thumb_G_1460757487454.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2804" target="_blank">海俪恩2016新款太阳镜 男士墨镜 男款...</a></p>
+				          <p class="price"><del style="color:#999">429.5</del></p>
+				          <p><font class="price">358.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2803" target="_blank"><img src="img/gouwuche_files/2803_thumb_G_1460757401573.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2803" target="_blank">普莱斯近视眼镜男 纯钛眼镜架男 商务半框...</a></p>
+				          <p class="price"><del style="color:#999">201.6</del></p>
+				          <p><font class="price">168.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2802" target="_blank"><img src="img/gouwuche_files/2802_thumb_G_1460757291861.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2802" target="_blank">普莱斯太阳镜男墨镜偏光镜蛤蟆镜开车驾驶司...</a></p>
+				          <p class="price"><del style="color:#999">213.6</del></p>
+				          <p><font class="price">178.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2801" target="_blank"><img src="img/gouwuche_files/2801_thumb_G_1460757188503.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2801" target="_blank">普莱斯2016新款太阳镜女 墨镜大框圆脸...</a></p>
+				          <p class="price"><del style="color:#999">189.6</del></p>
+				          <p><font class="price">158.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2800" target="_blank"><img src="img/gouwuche_files/1.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2800" target="_blank">普莱斯2016新太阳镜女四叶草墨镜女潮流...</a></p>
+				          <p class="price"><del style="color:#999">222.0</del></p>
+				          <p><font class="price">185.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2799" target="_blank"><img src="img/gouwuche_files/2.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2799" target="_blank">普莱斯2016太阳镜女潮圆脸太阳镜女开车...</a></p>
+				          <p class="price"><del style="color:#999">153.6</del></p>
+				          <p><font class="price">128.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2798" target="_blank"><img src="img/gouwuche_files/3.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2798" target="_blank">新款电脑防辐射眼镜护目镜抗疲劳复古眼镜框...</a></p>
+				          <p class="price"><del style="color:#999">103.2</del></p>
+				          <p><font class="price">86.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2797" target="_blank"><img src="img/gouwuche_files/4.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2797" target="_blank">新款潮韩版墨镜太阳镜明星款半框炫彩女圆形...</a></p>
+				          <p class="price"><del style="color:#999">115.1</del></p>
+				          <p><font class="price">96.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                      </ul>
+				      <ul class="">
+				                        <li>
+				          <p class="pic"><a href="goods.php?id=2806" target="_blank"><img src="img/gouwuche_files/2806_thumb_G_1460757672449.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2806" target="_blank">海俪恩太阳镜女款唐嫣同款 时尚镀膜偏光太...</a></p>
+				          <p class="price"><del style="color:#999">393.5</del></p>
+				          <p><font class="price">328.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2805" target="_blank"><img src="img/gouwuche_files/2805_thumb_G_1460757602080.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2805" target="_blank">海俪恩太阳镜女 唐嫣同款 2016新款 ...</a></p>
+				          <p class="price"><del style="color:#999">393.5</del></p>
+				          <p><font class="price">328.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2804" target="_blank"><img src="img/gouwuche_files/2804_thumb_G_1460757487454.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2804" target="_blank">海俪恩2016新款太阳镜 男士墨镜 男款...</a></p>
+				          <p class="price"><del style="color:#999">429.5</del></p>
+				          <p><font class="price">358.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2803" target="_blank"><img src="img/gouwuche_files/2803_thumb_G_1460757401573.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2803" target="_blank">普莱斯近视眼镜男 纯钛眼镜架男 商务半框...</a></p>
+				          <p class="price"><del style="color:#999">201.6</del></p>
+				          <p><font class="price">168.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2802" target="_blank"><img src="img/gouwuche_files/2802_thumb_G_1460757291861.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2802" target="_blank">普莱斯太阳镜男墨镜偏光镜蛤蟆镜开车驾驶司...</a></p>
+				          <p class="price"><del style="color:#999">213.6</del></p>
+				          <p><font class="price">178.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2801" target="_blank"><img src="img/gouwuche_files/2801_thumb_G_1460757188503.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2801" target="_blank">普莱斯2016新款太阳镜女 墨镜大框圆脸...</a></p>
+				          <p class="price"><del style="color:#999">189.6</del></p>
+				          <p><font class="price">158.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span></li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2800" target="_blank"><img src="img/gouwuche_files/1.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2800" target="_blank">普莱斯2016新太阳镜女四叶草墨镜女潮流...</a></p>
+				          <p class="price"><del style="color:#999">222.0</del></p>
+				          <p><font class="price">185.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2799" target="_blank"><img src="img/gouwuche_files/2.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2799" target="_blank">普莱斯2016太阳镜女潮圆脸太阳镜女开车...</a></p>
+				          <p class="price"><del style="color:#999">153.6</del></p>
+				          <p><font class="price">128.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2798" target="_blank"><img src="img/gouwuche_files/3.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2798" target="_blank">新款电脑防辐射眼镜护目镜抗疲劳复古眼镜框...</a></p>
+				          <p class="price"><del style="color:#999">103.2</del></p>
+				          <p><font class="price">86.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                <li>
+				          <p class="pic"><a href="goods.php?id=2797" target="_blank"><img src="img/gouwuche_files/4.jpg"></a></p>
+				          <p class="name"><a href="goods.php?id=2797" target="_blank">新款潮韩版墨镜太阳镜明星款半框炫彩女圆形...</a></p>
+				          <p class="price"><del style="color:#999">115.1</del></p>
+				          <p><font class="price">96.0</font></p>
+				          <span class="iconfont icon-gouwuche1" href="javascript:addToCart(2797)"></span> </li>
+				                      </ul>
+				       
+				       
+				    </div>
+				  </div>
+				  
+				  
+				  <div id="contentbottom">
+				  	<p>
+				  		<a href="javascript:;">关于我们</a>| <a href="javascript:;">管理团队</a>| <a href="javascript:;">商家入驻</a>| <a href="javascript:;">媒体报道</a>| <a href="javascript:;">站点地图</a>| <a href="javascript:;">招贤纳士</a>| 帮助中心 ICP备案证书号: <a href="javascript:;">冀ICP备14019346号-1</a>
+
+				  	</p>
+				  	<p>
+				  		<a href="javascript:;">© 2005-2017 聚惠买商城_河北网上商城分销服务平台 版权所有，并保留所有权利。</a> <a href="javascript:;">石家庄桥西区永安街46号 Tel:</a> <a href="javascript:;">400-0310-707 E-mail: juhuimai@126.com</a>
+				  	</p>
+				  </div>
+				  
+				
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--这是定位右侧的侧边栏-->
+		<div id="a2">
+			<div>
+				<a href="javascript:;" id="a2user">
+					<img src="img/gouwuche_files/user_head.png">
+				</a>
+				<div>
+						<div>
+							<h3><span class="span">请登录</span><span>还没有注册</span><span>立即注册</span></h3>
+							<p>
+								账号:<input type="text" id="user">
+							</p>
+							<p>
+								<span>密码:</span><input type="password" id="password">
+							</p>
+							<p>
+								<input type="checkbox"><span>记住密码</span><span>忘记密码？</span>
+							</p>
+						</div>
+						<div>
+							
+						</div>
+				</div>
+				
+			</div>
+			<div id="xs">
+				<a href="javascript:;">在线销售</a>
+				<div>
+						<div>
+							<h3>在线销售顾问</h3>
+							<p><span class="iconfont icon-yonghu"></span>在线客服</p>
+							<p><span class="iconfont icon-yonghu"></span>在线主管</p>
+						</div>
+						<div>
+							
+						</div>
+				</div>
+			</div>
+			<div id="tc">
+				<a href="javascript:;"><span class="iconfont icon-yifu"></span>调查</a>
+				<div>
+					在线调查
+				</div>
+				
+			</div>
+			<div id="gwc">
+				<a href="javascript:;"><span class="iconfont icon-gouwuche2"></span>购物车 0</a>
+			</div>
+			<div id="gz">
+				<a href="javascript:;">关注</a>
+				<div>
+					<a href="javascript:;"><span class="iconfont icon-aixin"></span>关注</a>
+				</div>
+			</div>
+			<div id="sc">
+				<a href="javascript:;">收藏</a>
+				<div>
+					<a href="javascript:;"><span class="iconfont icon-shouji"></span>收藏</a>
+				</div>
+			</div>
+			<div id="ewm">
+				<a href="javascript:;"><span class="iconfont icon-shouji1"></span></a>
+			</div>
+			<div id="top">
+				<a href="javascript:;" id="a2top">回到顶部</a>
+			</div>
+		</div>
+	</body>
+</html>

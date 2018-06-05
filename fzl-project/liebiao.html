@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/liebiao.css" />
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/jQuery.js" ></script>
+		<script src="js/jquery-fly.js"></script>
+		<script type="text/javascript" src="js/liebiao.js" ></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="js/lbcookie.js" ></script>
+	</head>
+	<body>
+		<header>
+			<div class="hbox">
+				<div class="h0">
+					<span><img src="img/curcity.png"></span>
+					<span><a>邯郸</a></span>
+					<a href="">【切换市区】</a>
+				</div>
+				<div class="h1">
+					<a href="">欢迎光临本店</a>
+					<div class="index_user">
+						<a href="login.html">请登录</a>
+						<a href="zhuce.html">免费注册</a>
+					</div>
+				</div>
+				<div class="hr">
+					<a href=""><span>我的信息</span><span class="iconfont icon-xiangxiajiantou"></span><p id="hr1"><span>已买到的宝贝</span><span>我的地址管理</span></p></a>
+					<a href=""><span class="iconfont icon-aixin" ></span><span>我关注的店铺</span></a>
+					<a href=""><span class="iconfont icon-gouwuche1"></span><span>购物车</span><span class="iconfont icon-xialahuise"></span></a>
+					<a href="">收藏夹<span class="iconfont icon-xiangxiajiantou"></span></a>
+					<a href=""><span class="iconfont icon-shouji1"></span>手机版</a>
+					<a href="">商家支持<span class="iconfont icon-xiangxiajiantou"></span></a>
+					<a href=""><span class="iconfont icon-wangzhandaohang"></span>网站导航<span class="iconfont icon-xialahuise"></span></a>
+				</div>
+				
+				
+				
+				
+				<div id="menu-1">
+					<p><span>当前城市：</span><b>邯郸</b></p>
+					<a href="javascript:;">太行山</a>
+					<a href="javascript:;">保定</a>
+					<a href="javascript:;">井冈山</a>
+					<a href="javascript:;">贵州</a>
+					<a href="javascript:;">西藏</a>
+					<a href="javascript:;">大理</a>
+					<a href="javascript:;">云南</a>
+				</div>
+				
+				<div id="menu-4">
+					<a href="javascript:;">收藏的宝贝</a>
+					<a href="javascript:;">收藏的店铺</a>
+				</div>
+				
+				
+				<div id="menu-5">
+					<img src="img/bg2_files/weixin.jpg">
+				</div>
+				
+				
+				<div class="menu-bd" id="menu-6">
+			          <ul>
+			            <li>
+			              <h3>商家：</h3>
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=9">售后流程</a> 
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=10">购物流程</a> 
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=11">订购方式</a> 
+			               
+			              <a href="http://www.juhuimai.cn/help.php?id=18">常见问题</a> 
+			               
+			              <a href="http://www.juhuimai.cn/article_list.php">文章资讯</a> 
+			               
+			              <a href="http://www.juhuimai.cn/zt/2015/jhk" target="_blank">聚惠卡</a> 
+			               
+			              <a href="http://www.juhuimai.cn/zt/2015/renzheng" target="_blank">认证商家</a> 
+			               
+			              <a href="http://xue.juhuimai.cn/index.php" target="_blank">商学院</a> 
+			               
+			              <a href="http://www.juhuimai.cn/zt/2015/zhaoshang" target="_blank">全面招商</a> 
+			               
+			            </li>
+			            <li>
+			              <h3>帮助：</h3>
+			              <a href="http://www.juhuimai.cn/help.php" target="_top" title="帮助中心">帮助中心</a> 
+			            </li>
+			          </ul>
+			    </div>
+				
+				
+				<div class="menu-bd sn-sitemap-bd" id="menu-8">
+				            <div class="site-cont site-hot">
+				              <h2>产品分类<span>Product</span></h2>
+				              <ul class="site-list">
+				                <li><a href="http://www.juhuimai.cn/category.php?id=1">食品生鲜</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=2">服装服饰</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=3">个护化妆</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=4">手机数码</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=5">家用电器</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=6">家纺家居</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=7">酒类饮料</a></li>
+				                <li><a href="http://www.juhuimai.cn/category.php?id=8">母婴用品</a></li>
+				              </ul>
+				            </div>
+				            <div class="site-cont site-market">
+				              <h2>店铺街<span>Market</span></h2>
+				              <ul class="site-list">
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=1">精选</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=2">女人</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=3">男人</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=4">家装</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=5">母婴</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=6">美妆</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=7">美食</a></li>
+				                <li><a href="http://www.juhuimai.cn/stores.php?id=8">数码</a></li>
+				              </ul>
+				            </div>
+				            <div class="site-cont site-brand">
+				              <h2>关于我们<span>About</span></h2>
+				              <ul class="site-list">
+				                <li><a href="http://www.juhuimai.cn/help.php?id=24">公司简介</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=25">管理团队</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=26">媒体报道</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=47">领导关怀</a></li>
+				                <li><a href="http://www.juhuimai.cn/help.php?id=76">招贤纳士</a></li>
+				              </ul>
+				            </div>
+				         </div>
+			</div>	
+		</header>
+		<div class="navbox">
+		<figure>
+			<div class="logo">
+				<a href="javascript:;"><img src="img/logo_sjz.jpg"></a>
+				<p><a href="">全部商品分类</a><span class="iconfont icon-xiangxiajiantou"></span></p>
+			</div>
+			<div class="search">
+				<p>
+					<a href="" class="ppa">宝贝</a>
+					<a href="">店铺</a>
+				</p>
+				<div class="sc">
+					<div>
+						<span class="iconfont icon-2"></span>
+						<input type="text" class="iconfont icon-2 search_txt" placeholder="大神聊跑步选装备">
+						<a href="javascript:;" class="btn_search">搜索</a>
+					</div>
+				</div>
+				<div class="sb">
+					<a href="">灯饰</a>
+					<a href="">私房菜</a>
+					<a href="">丛台酒</a>
+					<a href="">非凡旅游</a>
+					<a href="">家具</a>
+					<a href="">三星s6</a>
+					<a href="">苹果</a>
+				</div>
+				<div class="ss">
+					<a href="">首页</a>
+					<a href="">食品生鲜</a>
+					<a href="">店铺街</a>
+					<a href="">积分商城</a>
+					<a href="">优惠活动</a>
+					<a href="">智能扫货</a>
+					<a href="">文章资讯</a>
+				</div>
+			</div>
+			<div class="logo2">
+				<a href="javascript:;">
+					<span class="iconfont icon-7"></span>
+					<span>七天包退</span>
+				</a>
+				<a href="javascript:;">
+					<span class="iconfont icon-2"></span>
+					<span>正品保障</span>
+				</a>
+				<a href="javascript:;">
+					<span class="iconfont icon-shandianfahuo"></span>
+					<span>闪电发货</span>
+				</a>
+			</div>
+		</figure>
+		</div>
+		
+		
+		
+		<div id="contentbox">
+			<div id="content">
+				<div id="navl">
+					<dl>
+						<dt><span class="iconfont icon-feiji"></span>食品生鲜<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">保健食品</a>
+							<a href="javascript:;">进口水果 ...</a>
+						</dd>
+						<!--水果-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">保健食品:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-yifu"></span>服装服饰<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">女装馆</a>
+							<a href="javascript:;">T桖</a>
+							<a href="javascript:;">中长款...</a>
+						</dd>
+						<!--服饰女装管-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">女装馆:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-huazhuangpin"></span>个护化妆<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">美容护肤</a>
+							<a href="javascript:;">香水彩妆 ...</a>
+						</dd>
+						<!--个性化妆-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">化妆品:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-shoujishumadiannao"></span>手机数码<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">网卡</a>
+							<a href="javascript:;">热卖手机</a>
+							<a href="javascript:;">手...</a>
+						</dd>
+						<!--手机数码-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">手机数码:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-jiandao"></span>家用电器<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">大家电</a>
+							<a href="javascript:;">大家网</a>
+							<a href="javascript:;">生...</a>
+						</dd>
+						<!--家用电器-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">家用电器:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-weishengzhi"></span>家具日用<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">家纺</a>
+							<a href="javascript:;">家具</a>
+							<a href="javascript:;">厨局 ...</a>
+						</dd>
+						<!--家用日用-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">家用日用:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-huazhuangpin"></span>酒类饮料<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">酒水</a>
+							<a href="javascript:;">冲调饮品</a>
+							<a href="javascript:;">饮...</a>
+						</dd>
+						<!--酒水饮品-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">酒水饮品:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+					<dl>
+						<dt><span class="iconfont icon-muyingyongpinfe5f4a"></span>母婴用品<span> > </span></dt>
+						<dd>
+							<a href="javascript:;">尿裤湿巾</a>
+							<a href="javascript:;">玩具</a>
+							<a href="javascript:;">婴...</a>
+						</dd>
+						<!--母婴用品-->
+				<div class="twonav">
+					<div id="twonavl" class="twonavl">
+						<div class="twonavla">
+							<div><a href="javascript:;">母婴用品:</a></div>
+							
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">进口水果:</a></div>
+							<div>
+								<a href="javascript:;">释迦芭乐</a>
+								<a href="javascript:;">樱桃车厘子</a>
+								<a href="javascript:;">芒果桃李</a>     
+								<a href="javascript:;">龙眼荔枝</a>
+								<a href="javascript:;">小波奇异果</a>
+								<a href="javascript:;">猕猴桃</a>
+								<a href="javascript:;">榴莲山竹</a>
+								<a href="javascript:;">凤梨蓝莓</a>
+							</div>
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">糖果巧克力:</a></div>
+							<div>
+								<a href="javascript:;">巧克力</a>
+								<a href="javascript:;">口香糖</a>
+								<a href="javascript:;">棒棒糖</a>     
+								<a href="javascript:;">软糖</a>
+								<a href="javascript:;">奶糖 </a>
+								<a href="javascript:;">QQ糖</a>
+								<a href="javascript:;">果冻</a>
+								
+							</div>
+							      
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">牛奶乳品:</a></div>
+							<div>
+								<a href="javascript:;">常温奶</a>
+								<a href="javascript:;">乳饮料 </a>
+								<a href="javascript:;">儿童奶</a>     
+								<a href="javascript:;">酸奶</a>
+								<a href="javascript:;">豆奶</a>
+								<a href="javascript:;">低脂奶 </a>
+								<a href="javascript:;">全脂奶</a>
+								<a href="javascript:;">成人奶粉</a>
+							</div>    
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">坚果炒货:</a></div>
+							<div>
+								<a href="javascript:;">核桃</a>
+								<a href="javascript:;">夏威夷果</a>
+								<a href="javascript:;">碧根果</a>     
+								<a href="javascript:;">开心果</a>
+								<a href="javascript:;">腰果</a>
+								<a href="javascript:;">瓜子</a>
+								<a href="javascript:;">花生</a>
+								<a href="javascript:;">杏仁</a>
+							</div>
+							   
+						</div>
+						<div class="twonavla">
+							<div><a href="javascript:;">蜜饯果干:</a></div>
+							<div>
+								<a href="javascript:;">红枣</a>
+								<a href="javascript:;">莓类</a>
+								<a href="javascript:;">葡萄干</a>     
+								<a href="javascript:;">芒果干</a>
+								<a href="javascript:;">香蕉干</a>
+								<a href="javascript:;">山楂片</a>
+								<a href="javascript:;">橄榄</a>
+								<a href="javascript:;"> 其他</a>
+							</div>
+					 
+						</div>
+					</div>
+					<div id="twonavr" class="twonavr">
+						<h4>推荐品牌</h4>
+						<div>
+							<a href="javascript:;">三只松鼠</a>
+							<a href="javascript:;">楼兰密语</a>
+							<a href="javascript:;">百草味</a>
+							<a href="javascript:;">三元</a>
+							<a href="javascript:;">伊利</a>
+							<a href="javascript:;">贝古贝古</a>
+							<a href="javascript:;">肯德基</a>
+							<a href="javascript:;">必胜客</a>
+							<a href="javascript:;">西域美农</a>
+							<a href="javascript:;">美赞臣</a>
+							<a href="javascript:;">享爱.</a>
+							<a href="javascript:;">糖糖屋</a>
+							<a href="javascript:;">宝瑞淇</a>
+							<a href="javascript:;">费列罗</a>
+							<a href="javascript:;">Vega</a>
+							<a href="javascript:;">SUNSIDES</a>
+							<a href="javascript:;">Sainsbury's</a>
+							<a href="javascript:;">圣牧</a>
+							<a href="javascript:;">纽麦福</a>
+						</div>
+						
+					</div>
+				</div>
+					</dl>
+				</div>
+				
+				
+				<div class="breadcrumb"><i></i><a href=".">首页</a> <code>&gt;</code> <a href="category.php?id=2">商品搜索</a> <code>&gt;</code>_苹果手机</div>
+			
+				<div id="main">
+					<div id="left">
+						<div id="ltop">
+							<div class="item">
+								<h3>
+									<b></b>
+									食品生鲜
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									服装服饰
+								</h3>
+								<ul>
+									<li><a href="javascript:;">女装馆</a></li>
+									<li><a href="javascript:;">T恤</a></li>
+									<li><a href="javascript:;">中长款半身</a></li>
+									<li><a href="javascript:;">裙夹克/风衣</a></li>
+									<li><a href="javascript:;">男装馆</a></li>
+									<li><a href="javascript:;">内衣馆</a></li>
+									
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									个性化妆
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									手机数码
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									家用电器
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									家用日具
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									酒水饮料
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>
+									<b></b>
+									母婴用品
+								</h3>
+								<ul>
+									<li><a href="javascript:;">保健食品</a></li>
+									<li><a href="javascript:;">进口水果</a></li>
+									<li><a href="javascript:;">糖果巧克力</a></li>
+									<li><a href="javascript:;">牛奶乳品</a></li>
+									<li><a href="javascript:;">坚果炒货</a></li>
+									<li><a href="javascript:;">蜜饯果干</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="lbottom">
+							<div class="mt">
+								<h2>销量排行榜</h2>
+							</div>
+							
+							<div class="mc">
+							    <ul class="tabcon">        
+							      <li class="fore fore1" id="top2b1" style="display: none;"><span>1</span>
+							        <div class="p-img"><a target="_blank" href="goods.php?id=2708"> <img src="img/shangpinxiangqing_files/139_thumb_G_1452881454307.jpg" alt="" width="50" height="50"></a></div>
+							        <div class="p-name"><a target="_blank" href="goods.php?id=2708">康婷瑞倪维儿活肤营养水80ml</a></div>
+							        <div class="price" style=" color:#DD0000"> 97.0 </div>
+							      </li>
+							      <li class=" fore1" id="top2s1" style="display: block;"><span>1</span>
+							      <div class="p-name"><a href="goods.php?id=2708">康婷瑞倪维儿活肤营养水80ml<font color="#ff6600"></font></a></div>
+							      </li>
+							      
+							            
+							      <li class="fore fore1" id="top2b2" style="display: block; border-bottom: none;"><span>2</span>
+							        <div class="p-img"><a target="_blank" href="goods.php?id=147"> <img src="img/shangpinxiangqing_files/1460786391697827.jpg" alt="" width="50" height="50"></a></div>
+							        <div class="p-name"><a target="_blank" href="goods.php?id=147">Huawei/华为 荣耀6 Plus高配版 移动...</a></div>
+							        <div class="price" style=" color:#DD0000"> 1899.0 </div>
+							      </li>
+							      <li style="border-bottom: none; display: none;" class=" fore1" id="top2s2" ><span>2</span>
+							      <div class="p-name"><a href="goods.php?id=147">Huawei/华为 荣耀6 Plus高配版 移动...<font color="#ff6600"></font></a></div>
+							      </li>       
+							    </ul>
+							</div>
+						</div>
+					</div>
+					<div id="right">
+						
+						<div id="filter">
+					        <div class="fore1" style="border:none;">
+					            <dl class="order">
+					              <dt>  
+					                <span>搜索结果</span> 
+					                &nbsp;&nbsp;</dt>
+					              <dd class="">
+					              	<a href="search.php?keywords=%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA&amp;category=0&amp;brand=0&amp;min_price=0&amp;max_price=0&amp;action=&amp;intro=&amp;goods_type=0&amp;sc_ds=0&amp;outstock=0&amp;page=1&amp;sort=goods_id&amp;order=DESC#list">上架
+					                <b class="icon-order-DESCending"></b></a>
+					              </dd>
+					              <dd class="">
+					              	<a href="search.php?keywords=%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA&amp;category=0&amp;brand=0&amp;min_price=0&amp;max_price=0&amp;action=&amp;intro=&amp;goods_type=0&amp;sc_ds=0&amp;outstock=0&amp;page=1&amp;sort=shop_price&amp;order=DESC#list">价格
+					                <b class="icon-order-DESCending"></b></a>
+					              </dd>
+					              <dd class="curr">
+					              	<a href="search.php?keywords=%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA&amp;category=0&amp;brand=0&amp;min_price=0&amp;max_price=0&amp;action=&amp;intro=&amp;goods_type=0&amp;sc_ds=0&amp;outstock=0&amp;page=1&amp;sort=last_update&amp;order=DESC#list">更新
+					                <b class="icon-order-ASCending"></b></a>
+					              </dd>
+					              <dd class="">
+					              	<a href="search.php?keywords=%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA&amp;category=0&amp;brand=0&amp;min_price=0&amp;max_price=0&amp;action=&amp;intro=&amp;goods_type=0&amp;sc_ds=0&amp;outstock=0&amp;page=1&amp;sort=click_count&amp;order=DESC#list">人气
+					                <b class="icon-order-DESCending"></b></a>
+					              </dd>
+					            </dl>
+					            <div class="pagin pagin-m"><span class="text"><font>1</font>/4</span> 
+					              <span class="prev-disabled">&lt;</span> 
+					               
+					               
+					              <a href="search.php?keywords=%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA&amp;category=0&amp;brand=0&amp;sort=last_update&amp;order=ASC&amp;min_price=0&amp;max_price=0&amp;action=&amp;intro=&amp;goods_type=0&amp;sc_ds=0&amp;outstock=0&amp;page=2" class="next">&gt;</a> 
+					              </div>
+					            <div class="total"><span>共<strong>50</strong>个商品</span></div>
+					            <span class="clr"></span></div>
+					        </div>
+						
+						<div id="sq">
+							<ul class="sq_ul">
+								<!-- <li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/1114_thumb_G_1438019306462.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='6' data-url='img/liebiao_files/1114_thumb_G_1438019306462.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								
+								
+								
+								
+								
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/202_thumb_G_1437534795824.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='7' data-url='img/liebiao_files/202_thumb_G_1437534795824.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/2645_thumb_G_1453053185435.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='8' data-url='img/liebiao_files/2645_thumb_G_1453053185435.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/2708_thumb_G_1458596238415.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='9' data-url='img/liebiao_files/2708_thumb_G_1458596238415.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/2948_thumb_G_1487108181909.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='10' data-url='img/liebiao_files/2948_thumb_G_1487108181909.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/202_thumb_G_1437534795824.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='11' data-url='img/liebiao_files/202_thumb_G_1437534795824.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/gouwuche_files/2801_thumb_G_1460757188503.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='12' data-url='img/gouwuche_files/2801_thumb_G_1460757188503.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/gouwuche_files/2.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='13' data-url='img/gouwuche_files/2.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/2946_thumb_G_1487101592742.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='14' data-url='img/liebiao_files/2946_thumb_G_1487101592742.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/444_thumb_G_1433286895510.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='15' data-url='img/liebiao_files/444_thumb_G_1433286895510.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;"><img src="img/liebiao_files/454_thumb_G_1433292371782.jpg"></a>
+										<div><a href="javascript:;">爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...</a></div>
+										<div><span>78.00</span><i>93.6</i></div>
+										<div>
+											<div>
+												<span>0</span>
+												<span>商品销量</span>
+											</div>
+											<div>
+												<span>0</span>
+												<span>用户评论</span>
+											</div>
+											<div>
+												<span>1545</span>
+												<span>关注人气</span>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:;"></a>
+											<a href="javascript:;"></a>
+										</div>
+										<span class="xp">精品</span>
+										<a href="javascript:;" class="gg" data-id='16' data-url='img/liebiao_files/454_thumb_G_1433292371782.jpg' data-title='爱绚小米4手机套M4翻盖式保护壳男女四简约超薄磨...' data-price='78.00'>加入购物车</a>
+									</div>
+								</li> -->
+							</ul>
+						</div>
+						
+						<div id="ys">
+							<a href="javascript:;" id="ysleft"> < </a>
+								<p class="ysnum">
+									<!-- <a href="javascript:;" class="ysa">1</a>
+									<a href="javascript:;">2</a>
+									<a href="javascript:;">3</a>
+									<a href="javascript:;">4</a> -->
+								</p>
+							<a href="javascript:;" id="ysright"> > </a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="like">
+					<div id="likeleft">
+						<h2>最近浏览</h2>
+						<div>
+							<ul>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/1114_thumb_G_1438019306462.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/175_thumb_G_1452904659940.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/188_thumb_G_1437532927406.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/202_thumb_G_1437534795824.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/2946_thumb_G_1487101592742.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/444_thumb_G_1433286895510.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/100_thumb_G_1437523484060.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								<li>
+									<div class="p-img"><img src="img/liebiao_files/1136_thumb_G_1438110602642.jpg"></div>
+									<div class="p-name"><a href="javascript:;">Huawei/华为荣耀6Plus高配版移动联通双4G </a></div>
+									<div class="p-price">1888.0</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div id="likeright">
+						<h2>根据浏览猜你喜欢</h2>
+						<div class="auto">
+							<a href="javascript:;" class="lleft"> < </a>
+							<div >
+								<ul>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/100_thumb_G_1437523484060.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/1136_thumb_G_1438110602642.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/1114_thumb_G_1438019306462.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/147_thumb_G_1452897883992.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/175_thumb_G_1452904659940.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/188_thumb_G_1437532927406.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/202_thumb_G_1437534795824.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/1884_thumb_G_1439947944987.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/2645_thumb_G_1453053185435.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/2946_thumb_G_1487101592742.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/100_thumb_G_1437523484060.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/1136_thumb_G_1438110602642.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/1114_thumb_G_1438019306462.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/147_thumb_G_1452897883992.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+									<li>
+										<div class="p-img">
+											<img src="img/liebiao_files/175_thumb_G_1452904659940.jpg">
+										</div>
+										<div class="p-name">
+											<a href="javascript:;">Huawei/华为 荣耀6 Plus高配...</a>
+										</div>
+										<div class="p-comm">
+											<span></span>
+											<a>(已有0人评价)</a>
+										</div>
+										<div class="p-price">799.00</div>
+									</li>
+								</ul>
+							</div>
+							<a href="javascript:;" class="lright"> > </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+						
+		
+		<!--这是footer-->
+		<footer>
+			
+			<div id="footercenter">
+				<div>
+					<div>
+						<dl>
+							<dt><a href="javascript:;">关于我们</a></dt>
+							<dd><a href="javascript:;">隐私保护</a></dd>
+							<dd><a href="javascript:;">公司简介</a></dd>
+							<dd><a href="javascript:;">管理团队</a></dd>
+							<dd><a href="javascript:;">媒体报道</a></dd>
+							<dd><a href="javascript:;">领导关怀</a></dd>
+							<dd><a href="javascript:;">招贤纳士</a></dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt><a href="javascript:;">新手上路</a></dt>
+							<dd><a href="javascript:;">售后流程</a></dd>
+							<dd><a href="javascript:;">购物流程</a></dd>
+							<dd><a href="javascript:;">订购方式</a></dd>
+							<dd><a href="javascript:;">商品评价</a></dd>
+							<dd><a href="javascript:;">在线支付</a></dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt><a href="javascript:;">配送方式</a></dt>
+							<dd><a href="javascript:;">货到付款区域</a></dd>
+							<dd><a href="javascript:;">配送查询</a></dd>
+							<dd><a href="javascript:;">配送时间</a></dd>
+							<dd><a href="javascript:;">配送收费标准</a></dd>
+							<dd><a href="javascript:;">上门自提</a></dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt><a href="javascript:;">购物指南</a></dt>
+							<dd><a href="javascript:;">常见问题</a></dd>
+							<dd><a href="javascript:;">会员服务</a></dd>
+							<dd><a href="javascript:;">红包使用</a></dd>
+							<dd><a href="javascript:;">返现使用</a></dd>
+						</dl>
+					</div>
+					<div>
+						<dl>
+							<dt><a href="javascript:;">售后服务</a></dt>
+							<dd><a href="javascript:;">退换货原则</a></dd>
+							<dd><a href="javascript:;">售后服务保证</a></dd>
+							<dd><a href="javascript:;">退换货流程</a></dd>
+							<dd><a href="javascript:;">联系客服</a></dd>
+							<dd><a href="javascript:;">商品验收</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div>
+					<h3>400-0310-707</h3>
+					<p>周一至周五 9:00-17:30
+（仅收市话费）</p>
+					<a href="javascript:;">24小时在线客服</a>
+				</div>
+			</div>
+			<div id="footerbottom">
+				<p>友情链接： <a href="javascript:;">邢台亿搜人才网</a> | <a href="javascript:;">邯郸中小企业网</a> | <a href="javascript:;">亿搜人才网| <a href="javascript:;">众贤服务网</a> | <a href="javascript:;">快递查询</a></p>
+				<p>
+					<a href="javascript:;">关于我们</a>| <a href="javascript:;">管理团队</a>| <a href="javascript:;">商家入驻</a>| <a href="javascript:;">媒体报道</a>| <a href="javascript:;">站点地图</a>| <a href="javascript:;">招贤纳士</a>| 帮助中心 ICP备案证书号:<a href="javascript:;">冀ICP备14019346号-1</a>
+				</p>
+				<p>
+					<a href="javascript:;">© 2005-2017 聚惠买商城_河北网上商城分销服务平台 版权所有，并保留所有权利。</a><a href="javascript:;">石家庄桥西区永安街46号 Tel:</a><a href="javascript:;">400-0310-707</a><a href="javascript:;">E-mail:</a><a href="javascript:;">juhuimai@126.com</a>  
+				</p>
+			</div>
+			
+		</footer>
+				
+	    <!--这是定位右侧的侧边栏-->
+		<div id="a2">
+			<div>
+				<a href="javascript:;" id="a2user">
+					<span class="iconfont icon-yonghu"></span>
+				</a>
+				<div>
+						<div>
+							<h3><span class="span">请登录</span><span>还没有注册</span><span>立即注册</span></h3>
+							<p>
+								账号:<input type="text" id="user">
+							</p>
+							<p>
+								<span>密码:</span><input type="password" id="password">
+							</p>
+							<p>
+								<input type="checkbox"><span>记住密码</span><span>忘记密码？</span>
+							</p>
+						</div>
+						<div>
+							
+						</div>
+				</div>
+				
+			</div>
+			<div id="xs">
+				<a href="javascript:;">在线销售</a>
+				<div>
+						<div>
+							<h3>在线销售顾问</h3>
+							<p><span class="iconfont icon-yonghu"></span>在线客服</p>
+							<p><span class="iconfont icon-yonghu"></span>在线主管</p>
+						</div>
+						<div>
+							
+						</div>
+				</div>
+			</div>
+			<div id="tc">
+				<a href="javascript:;"><span class="iconfont icon-yifu"></span>调查</a>
+				<div>
+					在线调查
+				</div>
+				
+			</div>
+			<div id="gwc">
+				<a href="javascript:;"><span class="iconfont icon-gouwuche2" id="end"></span>购物车 <span class="num">0</span></a>
+			</div>
+			<div id="gz">
+				<a href="javascript:;">关注</a>
+				<div>
+					<a href="javascript:;"><span class="iconfont icon-aixin"></span>关注</a>
+				</div>
+			</div>
+			<div id="sc">
+				<a href="javascript:;">收藏</a>
+				<div>
+					<a href="javascript:;"><span class="iconfont icon-shouji"></span>收藏</a>
+				</div>
+			</div>
+			<div id="ewm">
+				<a href="javascript:;"><span class="iconfont icon-shouji1"></span></a>
+			</div>
+			<div id="top">
+				<a href="javascript:;" id="a2top">回到顶部</a>
+			</div>
+		</div>
+		
+		
+		
+		<!--购物车的动画-->
+		<div id="msg">已成功加入购物车！</div> 
+		
+		<!--对比栏-->
+		<a href="javascript:;" class="compare">对比栏</a>
+		
+		
+		
+		<div class="comparebox">
+			<div>
+				<ul>
+					<li class="pare"><a href="javascript:;">对比栏</a></li>
+					<li><a href="javascript:;">最近浏览</a></li>
+				</ul>
+				<a href="javascript:;" class="close">隐藏</a>
+			</div>
+			<div class="com">
+				<dl><dt style="background-color: rgb(246, 246, 246);">1</dt><dd>您还可以继续添加</dd></dl>
+				<dl><dt style="background-color: rgb(246, 246, 246);">2</dt><dd>您还可以继续添加</dd></dl>
+				<dl><dt style="background-color: rgb(246, 246, 246);">3</dt><dd>您还可以继续添加</dd></dl>
+				<dl><dt style="background-color: rgb(246, 246, 246);">4</dt><dd>您还可以继续添加</dd></dl>
+				<div class="operate"><a href="javascript:;">对比</a><a class="clear">清空对比栏</a></div>
+			</div>
+			<div>2</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+ul {
+  list-style: none outside none; }
+
+a {
+  text-decoration: none; }
+
+#a2 {
+  width: 30px;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+  #a2 > div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #a2 > div > a {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 12px;
+      padding: 3px 3px;
+      font-size: 12px;
+      display: block;
+      color: #fff; }
+  #a2 > div:nth-child(1) {
+    font-size: 30px;
+    margin-top: 100px;
+    position: relative;
+    display: block; }
+    #a2 > div:nth-child(1) > div {
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+      left: -252px;
+      display: none;
+      top: 0;
+      position: absolute;
+      border: 1px solid #3C3C3C;
+      background: #fff; }
+      #a2 > div:nth-child(1) > div div:nth-child(1) {
+        width: 200px;
+        height: 90px; }
+        #a2 > div:nth-child(1) > div div:nth-child(1) p {
+          display: flex;
+          width: 200px;
+          height: 35px;
+          justify-content: space-between;
+          align-items: center;
+          color: red;
+          font-size: 12px; }
+        #a2 > div:nth-child(1) > div div:nth-child(1) p:nth-child(4) span {
+          color: #000; }
+        #a2 > div:nth-child(1) > div div:nth-child(1) p:nth-child(4) span:nth-child(2) {
+          display: block;
+          width: 100px;
+          color: #333333;
+          margin-left: -50px; }
+      #a2 > div:nth-child(1) > div div:nth-child(2) {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: 241px;
+        top: 15px;
+        border-left: 10px solid #ccc;
+        border-bottom: 10px solid #fff;
+        border-top: 10px solid #fff; }
+      #a2 > div:nth-child(1) > div h3 {
+        width: 200px;
+        height: 20px;
+        display: flex;
+        color: #000;
+        font-size: 12px;
+        justify-content: space-between; }
+        #a2 > div:nth-child(1) > div h3 span {
+          display: block;
+          line-height: 20px; }
+        #a2 > div:nth-child(1) > div h3 span:nth-child(2) {
+          margin-left: 20px; }
+        #a2 > div:nth-child(1) > div h3 span:nth-child(3) {
+          background: red;
+          color: #fff; }
+        #a2 > div:nth-child(1) > div h3 .span {
+          color: red;
+          border-bottom: 2px solid red; }
+  #a2 > div:nth-child(1):hover > div {
+    display: block; }
+  #a2 > div:nth-child(2) {
+    position: relative; }
+    #a2 > div:nth-child(2) > div {
+      width: 120px;
+      height: 90px;
+      position: absolute;
+      left: -120px;
+      top: 0;
+      display: none; }
+      #a2 > div:nth-child(2) > div div:nth-child(1) {
+        width: 90px;
+        padding: 0 10px;
+        height: 90px;
+        line-height: 30px;
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #000; }
+        #a2 > div:nth-child(2) > div div:nth-child(1) p {
+          width: 90px;
+          height: 30px; }
+        #a2 > div:nth-child(2) > div div:nth-child(1) p:hover {
+          color: red; }
+      #a2 > div:nth-child(2) > div div:nth-child(2) {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: 110px;
+        top: 15px;
+        border-left: 10px solid #ccc;
+        border-bottom: 10px solid #fff;
+        border-top: 10px solid #fff; }
+  #a2 > div:nth-child(2):hover > div {
+    display: block; }
+  #a2 > div:nth-child(4) {
+    font-size: 14px;
+    line-height: 14px;
+    height: 72px; }
+  #a2 #xs {
+    background: red; }
+    #a2 #xs > div {
+      font-size: 12px; }
+  #a2 #gwc:hover {
+    background: red; }
+  #a2 #top:hover {
+    background: red; }
+  #a2 #ewm:hover {
+    background: red; }
+  #a2 > #tc {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative; }
+    #a2 > #tc a {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 12px;
+      padding: 3px 3px;
+      font-size: 12px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      color: #fff; }
+    #a2 > #tc div {
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      background: red;
+      color: #fff;
+      text-align: center; }
+  #a2 #gz {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative; }
+    #a2 #gz a {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 12px;
+      padding: 3px 3px;
+      font-size: 12px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      color: #fff; }
+    #a2 #gz > div {
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      background: red;
+      color: #fff;
+      text-align: center; }
+  #a2 #sc {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative; }
+    #a2 #sc a {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 12px;
+      padding: 3px 3px;
+      font-size: 12px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      color: #fff; }
+    #a2 #sc > div {
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      background: red;
+      color: #fff;
+      text-align: center; }
+  #a2 > a:nth-child(8) {
+    margin-top: 50px; }
+  #a2 > a:hover {
+    background: red; }
+
+.compare {
+  height: 66px;
+  line-height: 14px;
+  margin: 5px 0;
+  padding: 28px 4px 0;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  width: 17px;
+  right: 40px;
+  font-size: 12px;
+  color: #666666;
+  bottom: 150px;
+  display: block;
+  cursor: pointer;
+  color: #666;
+  background: url(../img/shangpinxiangqing_files/compare-btn.png) no-repeat; }
+
+.compare:hover {
+  background: url(../img/shangpinxiangqing_files/compare-hover-btn.png) no-repeat;
+  color: red; }
+
+.comparebox {
+  width: 990px;
+  height: 142px;
+  color: #666666;
+  display: none;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: 70px;
+  z-index: 11111; }
+  .comparebox > div:nth-child(1) {
+    width: 988px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #ddd; }
+    .comparebox > div:nth-child(1) ul {
+      width: 168px;
+      float: left;
+      height: 34px;
+      display: flex;
+      box-sizing: border-box; }
+      .comparebox > div:nth-child(1) ul li {
+        width: 84px;
+        height: 36px;
+        line-height: 34px;
+        box-sizing: border-box;
+        text-align: center; }
+        .comparebox > div:nth-child(1) ul li a {
+          color: #666666; }
+      .comparebox > div:nth-child(1) ul .pare {
+        border: 2px solid #7ABD54;
+        border-bottom: none;
+        border-bottom: 2px solid #fff; }
+    .comparebox > div:nth-child(1) > a {
+      float: right;
+      margin-right: 20px;
+      font-size: 12px; }
+  .comparebox > div {
+    display: none; }
+  .comparebox > div:nth-child(1) {
+    display: block; }
+  .comparebox > div:nth-child(2) {
+    color: #CCCCCC;
+    height: 90px;
+    overflow: hidden;
+    padding: 6px;
+    position: relative;
+    border: 2px solid #7ABD54;
+    z-index: 1111; }
+    .comparebox > div:nth-child(2) dl {
+      border-right: 1px dotted #7ABD54;
+      float: left;
+      margin-right: 10px;
+      width: 195px;
+      height: 50px;
+      display: block;
+      overflow: hidden;
+      padding: 17px 10px 12px 0; }
+      .comparebox > div:nth-child(2) dl dt {
+        border: 1px solid #FFFFFF;
+        color: #CCCCCC;
+        float: left;
+        font: 36px/48px arial;
+        height: 48px;
+        margin-right: 5px;
+        overflow: hidden;
+        text-align: center;
+        width: 48px; }
+      .comparebox > div:nth-child(2) dl dd {
+        float: left;
+        width: 140px;
+        display: block; }
+    .comparebox > div:nth-child(2) .operate {
+      position: absolute;
+      right: 22px;
+      text-align: center;
+      top: 22px;
+      height: 58px;
+      width: 85px; }
+      .comparebox > div:nth-child(2) .operate > a:nth-child(1) {
+        background-color: #E74649;
+        background-image: linear-gradient(to bottom, #E74649 0px, #DF3033 100%);
+        border: 0 none;
+        color: #FFFFFF;
+        cursor: pointer;
+        border-radius: 3px;
+        cursor: default;
+        display: block;
+        font: 700 14px/30px verdana;
+        height: 30px;
+        margin-bottom: 11px;
+        margin-left: 13px;
+        width: 59px;
+        line-height: 30px;
+        cursor: pointer; }
+      .comparebox > div:nth-child(2) .operate > a:hover {
+        text-decoration: underline; }
+  .comparebox > div:nth-child(3) {
+    color: #CCCCCC;
+    height: 90px;
+    overflow: hidden;
+    padding: 6px;
+    position: relative;
+    border: 2px solid #7ABD54;
+    z-index: 1111; }
+  .comparebox .com {
+    display: block; }
+
+/*# sourceMappingURL=rightcebian.css.map */
